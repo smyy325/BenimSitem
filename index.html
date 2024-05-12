@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Benim Sayfam♥</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Navbar Logo Stili */
+        .navbar-brand img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+e
+        /* Navbar Arka Plan Rengi değiştirmesi*/
+        .navbar.bg-body-tertiary {
+            background-color: hsl(202, 100%, 75%) !important;
+        }
+
+        /* Navbar Link Stili */
+        .navbar-nav .nav-link {
+            font-weight: bold;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+
+
+        /* Slider Resim Yüksekliği */
+        .resimSlider {
+            height: 600px;
+        }
+
+        /* Hakkımda Bölümü */
+        #hakkimda {
+            padding: 50px 0;
+            background-color: hsl(202, 73%, 86%);
+        }
+
+        #hakkimda .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #hakkimda .card {
+            width: 100%;
+        }
+
+        #hakkimda img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #hakkimda .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #hakkimda .card-text {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        #hakkimda .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Ekibim Bölümü Stili */
+        .ekibim {
+            background-color: white;
+        }
+
+        /* Kart İçeriği Stili */
+        .card-img-top {
+            height: 350px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .card-body {
+            min-height: 100px;
+        }
+
+        .card:hover .card-img-top {
+            opacity: 0.7;
+        }
+
+        .ekibim h5 {
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .ekibim h2 {
+            font-size: 45px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Galeri Stili */
+        .figure:hover {
+            opacity: 0.8;
+        }
+
+        .galeri h2 {
+            font-size: 45px;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body style="background-color: hsl(202, 73%, 86%);">
+
+    <!-- Menü kısmı-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="img/indir.jpeg" alt="Logo">
+            </a>
+            <!-- Navbar toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar collapse -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#carouselExampleIndicators">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hakkimda">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ekibim">Ekibim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeri">Galeri</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Menü bitiş -->
+
+
+    <!-- Slider Başlangıç-->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/1.jpg" class="d-block w-100 resimSlider" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/2.jpg" class="d-block w-100 resimSlider" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/3.jpeg" class="d-block w-100 resimSlider" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Slider Bitiş-->
+
+
+    <!-- Hakkımda kısmı-->
+    <section class="p-5 text-center hakkimda" id="hakkimda">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/indir.jpeg" class="img-fluid" alt="Görsel">
+                </div>
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Hello || Merhaba</h5>
+                            <hr>
+                            <p class="card-text">Hi! I'm Sümeyye. I'm pursuing my education in Software Engineering
+                                at Celal Bayar University.
+
+                                I focus on continuous learning and self-improvement to keep up with the changing
+                                dynamics of the business world.
+
+                                I would like to emphasize my passion for collaboration. I enjoy developing new projects,
+                                working effectively with my team, and solving problems in close collaboration with
+                                colleagues.
+
+                                I look forward to the opportunity to collaborate with you. Thank you!
+                                <br><br>
+                                Merhaba! Ben Sümeyye. Eğitimime Celal Bayar Üniversitesi'nde Yazılım Mühendisliği
+                                alanında devam ediyorum.
+
+                                İş dünyasının değişen dinamikleriyle başa çıkabilmek için sürekli öğrenmeye ve kendimi
+                                geliştirmeye odaklanıyorum.
+
+                                İşbirliğine olan tutkumu vurgulamak istiyorum. Yeni projeler geliştirmekten, takımımla
+                                etkili bir şekilde çalışmaktan ve meslektaşlarımla yakın işbirliği içinde problemleri
+                                çözmekten keyif alıyorum.
+
+                                Sizinle işbirliği yapma fırsatını dört gözle bekliyorum. Teşekkür ederim!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hakkımda bitiş-->
+
+
+    <!-- Ekibim başlangıç-->
+
+    <section class="p-5 text-center ekibim" style="background-color: hsl(202, 73%, 86%);" id="ekibim">
+        <div class="container">
+
+            <h2 class="mb-5 font-weight-bold">Ekibim</h2>
+            <hr>
+            <br>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100" ekipCard>
+                        <img src="img/12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Müyesser</h5>
+                            <p class="card-text"><b>Veri Bilimcisi</b><br>Analitik Düşünme Yeteneği, Matematiksel
+                                Yetenek, Veri Güvenliği ve Gizliliği Bilinci, Güçlü İletişim Becerileri ve Tam Bir Takım
+                                Oyuncusu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" ekipCard>
+                        <img src="img/14.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dilara</h5>
+                            <p class="card-text"><b>Backend Developer</b><br>Düzenli ve Organize, Mantıklı Düşünme
+                                Yeteneği, Sorun Çözme Becerisi ve Tam Bir Takım Oyuncusu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" ekipCard>
+                        <img src="img/15.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Betül</h5>
+                            <p class="card-text"><b>Tasarım</b><br>Görsel Estetik Anlayışı, Kullanıcı Merkezli Tasarım
+                                (UI/UX), Zaman Yönetimi ve Tam Bir Takım Oyuncusu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" ekipCard>
+                        <img src="img/13.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sedanur</h5>
+                            <p class="card-text"><b>Frontend Developer</b><br>Yaratıcı, Problem Çözücü, Detay Odaklı ve
+                                Tam Bir Takım Oyuncusu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" ekipCard>
+                        <img src="img/11.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Prodcut</h5>
+                            <p class="card-text"><b>Mobile Developer</b><br>Takip ve Analitik Yetenekler, İşbirliği ve
+                                İletişim Becerileri :), Kullanıcı Odaklılık ve Tam Bir Takım Oyuncusu :)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Ekibim bitiş-->
+
+
+    <!-- Galeri Başlangıç-->
+
+    <section class="p-5 text-center galeri" id="galeri">
+        <div class="container">
+
+            <h2 class="mb-5 font-weight-bold">Galeri</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <figure class="figure" shadow>
+                        <a href="img/111.jpg">
+                            <img src="img/111.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                        </a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="figure" shadow>
+                        <a href="img/112.jpg">
+                            <img src="img/112.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                        </a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="figure" shadow>
+                        <a href="img/113.jpg">
+                            <img src="img/113.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                        </a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="figure" shadow>
+                        <a href="img/114.jpg">
+                            <img src="img/114.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Galeri bitiş-->
+
+    <div class="bg-dark text-light text-center">
+        <p class="align-middle p-5 mb-0">
+            <span>Tüm Hakları Saklıdır &copy; || 2024</span><br>
+            <span>Designed By <i><b>Sümeyye</b></i></span>
+        </p>
+    </div>
+
+    <!-- Footer Başlangıç-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
